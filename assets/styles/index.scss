@@ -1,1 +1,118 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+body {
+  //animation: colorchange 4s infinite;
+}
+
+h3 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: purple;
+}
+
+h2 {
+  text-align: center;
+}
+
+.tile:hover {
+background: white;
+}
+
+#board {
+  margin: auto;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  animation: colorchange 3s infinite;
+}
+td {
+  width: 33.333%;
+  border: 3px solid white;
+  margin:3px;
+}
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+td:nth-of-type(2) {
+  border-top-color: transparent;
+}
+td:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+tr:nth-of-type(3)
+
+td {
+  border-bottom-color: transparent;
+}
+
+@keyframes colorchange
+{
+  0%   {background: red;}
+  25%  {background: orange;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+
+
+// body {
+//   background-color: black;
+// }
+//
+//
+// .grid {
+//     margin: 0 auto;
+//     width: 80vw;
+//     max-width: 80vh;
+//     height: 80vw;
+//     max-height: 60vh;
+//     font-size: 3rem;
+//     border: 5px solid red;
+// }
+// .row {
+//     display: flex;
+// }
+// .box {
+//     background: #02b3ea;
+//     margin: 4px;
+//     color: black;
+//     font-weight: bold;
+//     flex: 1 0 auto;
+//     position: relative;
+// }
+// .box:after {
+//     content: "";
+//     float:left;
+//     display: block;
+//     padding-top: 100%;
+// }
+// .box .inner {
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     top: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
