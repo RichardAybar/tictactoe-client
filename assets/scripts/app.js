@@ -34,6 +34,8 @@ function GameOver() {
     grid[0][b] === grid[1][b] &&
     grid[0][b] === grid[2][b]) {
       return grid[i][0]
+    }
+  }
 }
   //
   // let currentPlayer = playerOne;
@@ -53,13 +55,10 @@ $('.tile').click(function () {
 
     }
 
-    }
-  });
-
-
-
+  })
+// });
 
 //   $('td').on('click', function () {
-//     console.log(currentPlayer)
-//   })
+// //     console.log(currentPlayer)
+// //   })
 })

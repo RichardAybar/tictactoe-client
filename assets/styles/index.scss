@@ -27,37 +27,41 @@ background: white;
 }
 
 table {
-  width: 50%;
+  margin: auto;
+  width: 35%;
   border-collapse: collapse;
   table-layout: fixed;
   animation: colorchange 3s infinite;
+  // max-width: 600px;
 }
+
 td {
   width: 33.333%;
   border: 3px solid white;
   margin:3px;
 }
+
 td:after {
   content: '';
   display: block;
   margin-top: 100%;
 }
 
-table {
-  border-collapse: collapse;
-}
 
 td:first-of-type {
   border-left-color: transparent;
   border-top-color: transparent;
 }
+
 td:nth-of-type(2) {
   border-top-color: transparent;
 }
+
 td:nth-of-type(3) {
   border-right-color: transparent;
   border-top-color: transparent;
 }
+
 tr:nth-of-type(3)
 
 td {
