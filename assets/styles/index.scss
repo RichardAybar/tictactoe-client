@@ -5,6 +5,21 @@ body {
   //animation: colorchange 4s infinite;
 }
 
+.tile {
+  height: 80px;
+  width: 80px;
+  font-size: 28pt;
+  text-align: center
+}
+
+button {
+
+}
+
+div {
+  text-align: center;
+}
+
 h3 {
   text-align: center;
 }
@@ -12,6 +27,7 @@ h3 {
 h1 {
   text-align: center;
   color: purple;
+  font-size: 30px;
 }
 
 h2 {
@@ -24,50 +40,55 @@ background: white;
 
 #board {
   margin: auto;
+  animation: colorchange 5s infinite;
 }
+
 
 table {
-  margin: auto;
-  width: 35%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  animation: colorchange 3s infinite;
-  // max-width: 600px;
+  border: 2px solid white;
 }
-
-td {
-  width: 33.333%;
-  border: 3px solid white;
-  margin:3px;
-}
-
-td:after {
-  content: '';
-  display: block;
-  margin-top: 100%;
-}
-
-
-td:first-of-type {
-  border-left-color: transparent;
-  border-top-color: transparent;
-}
-
-td:nth-of-type(2) {
-  border-top-color: transparent;
-}
-
-td:nth-of-type(3) {
-  border-right-color: transparent;
-  border-top-color: transparent;
-}
-
-tr:nth-of-type(3)
-
-td {
-  border-bottom-color: transparent;
-}
-
+// table {
+//   margin: auto;
+//   width: 35%;w
+//   border-collapse: collapse;
+//   table-layout: fixed;
+//   animation: colorchange 3s infinite;
+//   // max-width: 600px;
+// }
+//
+// td {
+//   width: 33.333%;
+//   border: 3px solid white;
+//   margin:3px;
+// }
+//
+// td:after {
+//   content: '';
+//   display: block;
+//   margin-top: 100%;
+// }
+//
+//
+// td:first-of-type {
+//   border-left-color: transparent;
+//   border-top-color: transparent;
+// }
+//
+// td:nth-of-type(2) {
+//   border-top-color: transparent;
+// }
+//
+// td:nth-of-type(3) {
+//   border-right-color: transparent;
+//   border-top-color: transparent;
+// }
+//
+// tr:nth-of-type(3)
+//
+// td {
+//   border-bottom-color: transparent;
+// }
+//
 @keyframes colorchange
 {
   0%   {background: red;}

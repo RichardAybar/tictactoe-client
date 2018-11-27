@@ -16,7 +16,37 @@
     <body>
       <h1>TIC TAC TOE</h1>
 
-      <table id="board">
+      <!-- Button trigger modal -->
+      <div>
+      <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+        Get Started
+      </button>
+    </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+                <button type="button" class="btn btn-outline-secondary">New Game</button>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table border="1" id="board">
       <tr>
       <td class="tile" data-a=0 data-b=0></td>
       <td class="tile" data-a=0 data-b=1></td>
@@ -33,6 +63,11 @@
       <td class="tile" data-a=2 data-b=2></td>
         </tr>
       </table>
+
+      <div>
+      <button type="button" class="btn btn-outline-secondary">New Game</button>
+    </div>
+
 
 
       <!-- <div class="grid">
